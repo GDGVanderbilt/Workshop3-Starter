@@ -9,8 +9,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "messages",
-      "database_id": "9600a4ea-74f5-4b6f-bc29-6b8a8175364c",
+      "database_name": "YOUR_DB_NAME",
+      "database_id": "YOUR_DB_ID",
       "remote": true
     }
   ]
