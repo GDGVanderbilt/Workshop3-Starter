@@ -43,9 +43,6 @@ function App() {
             {saving ? "Saving..." : "Save"}
           </div>
         </div>
-        {messages.map((message) => (
-          <Message key={message.id} message={message} />
-        ))}
       </div>
     </main>
   );
