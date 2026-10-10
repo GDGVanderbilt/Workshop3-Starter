@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./colors.css";
 
 function Message({ message }) {
+  // TODO
   return (
     <div></div>
   );
@@ -21,7 +22,7 @@ function App() {
   };
 
   const saveMessage = async () => {
-
+    // TODO
   };
 
   useEffect(() => {
@@ -47,9 +48,7 @@ function App() {
             {saving ? "Saving..." : "Save"}
           </div>
         </div>
-        {messages.map((message) => (
-          <Message key={message.id} message={message} />
-        ))}
+        {/* TODO */}
       </div>
     </main>
   );
