@@ -14,7 +14,10 @@ function App() {
   const [saving, setSaving] = useState(false);
 
   const getMessages = async () => {
+    const response = await fetch("/api/messages");
+    const data = await response.json();
 
+    setMessages(data);
   };
 
   const saveMessage = async () => {
@@ -22,7 +25,8 @@ function App() {
   };
 
   useEffect(() => {
-
+    getMessages();
+    setInterval(getMessages, 2000);
   }, []);
 
   return (
@@ -43,6 +47,9 @@ function App() {
             {saving ? "Saving..." : "Save"}
           </div>
         </div>
+        {messages.map((message) => (
+          <Message key={message.id} message={message} />
+        ))}
       </div>
     </main>
   );
